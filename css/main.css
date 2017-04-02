@@ -1,0 +1,85 @@
+/*
+This is the visible area of you carousel.
+Set a width here to define how much items are visible.
+The width can be either fixed in px or flexible in %.
+Position must be relative!
+*/
+.jcarousel {
+    width: 20%;
+    position: relative;
+    overflow: hidden;
+}
+
+/*
+This is the container of the carousel items.
+You must ensure that the position is relative or absolute and
+that the width is big enough to contain all items.
+*/
+.jcarousel ul {
+    width: 20000em;
+    position: relative;
+
+    /* Optional, required in this case since it's a <ul> element */
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+These are the item elements. jCarousel works best, if the items
+have a fixed width and height (but it's not required).
+*/
+.jcarousel li {
+    /* Required only for block elements like <li>'s */
+    float: left;
+}
+
+
+/* --- SELECT --- */
+.custom-select, .custom-select-label{
+  height: 2em;
+  line-height: 2em;
+  position: relative;
+  width: 15%;
+  display: block;
+}
+
+.custom-select{
+  margin-bottom: -2em;
+  z-index: 2;
+  opacity: 0;
+  -webkit-appearance: none;
+}
+
+.custom-select-label{
+  padding-left: 0.5em;
+  background: #ddd;
+  margin: 0;
+  -webkit-box-shadow: 0px 1px 5px rgba(0,0,0,0.4);
+  box-shadow: 0px 1px 5px rgba(0,0,0,0.4);
+}
+
+.custom-select-label:after{
+  content: "";
+  display: block;
+  border: 6px solid transparent;
+  border-top-color: #222;
+  position: absolute;
+  top: 50%;
+  right: 0.5em;
+  margin-top: -3px;
+}
+
+/* --- CHECKBOX --- */
+/* Jquery */
+.niceCheck {
+  width: 17px;
+  height: 17px;
+  display: inline-block;
+  cursor: pointer;
+  background: url(../img/checkbox-sprite.png);
+}
+
+.niceCheck input {
+  display: none;
+}
