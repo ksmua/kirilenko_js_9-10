@@ -81,5 +81,6 @@ have a fixed width and height (but it's not required).
 }
 
 .niceCheck input {
-  display: none;
+  margin-left: 100px;
+  /*display: none;*/
 }
