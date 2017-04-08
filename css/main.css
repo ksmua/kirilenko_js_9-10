@@ -1,7 +1,10 @@
 
 
 /* --- SELECT --- */
-.custom-select, .custom-select-label{
+.select-wrapper{
+  text-align: center;
+}
+/*.custom-select, .custom-select-label{
   height: 2em;
   line-height: 2em;
   position: relative;
@@ -34,7 +37,11 @@
   right: 0.5em;
   margin-top: -3px;
 }
-
+option{
+  color: red;
+  padding: 4px;
+  line-height: 2em;
+}*/
 /* --- CHECKBOX --- */
 /* --> Jquery */
 .niceCheck {

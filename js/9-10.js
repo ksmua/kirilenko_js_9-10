@@ -50,5 +50,13 @@ $(document).ready(function(){
         paginationPoint: 'div.jcider-pagination-point' // Элемент для пагинации точки
     });
     // SLIDER //
-    
+
+    //SELECT//
+    var params = {
+        changedEl: "select",
+        visRows: 4,
+        scrollArrows: true
+        }
+    cuSel(params);
+    //SELECT//
 });

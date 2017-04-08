@@ -8,11 +8,11 @@
       options =  $.extend(defaults, options);
       if(!$.browser.msie){
         return this.each(function() {
-            var select = $(this),
-                val = select.find(":selected"),
-                name = select.prop('id'),
-                o = options,
-                label, time;
+          var select = $(this),
+          val = select.find(":selected"),
+          name = select.prop('id'),
+          o = options,
+          label, time;
           if(typeof name === 'undefined'){
             time =  new Date();
             name = 'select-id-' + time.getTime();
