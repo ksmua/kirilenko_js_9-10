@@ -224,18 +224,18 @@ $.fn.jScrollPaneCusel = function(settings)
 					initDrag();
 					dragMiddle = getPos(event, 'Y') - dragPosition - currentOffset.top;
 					$('html').bind('mouseup', onStopDrag).bind('mousemove', updateScroll);
-					/*if ($.browser.msie) {
+					if ($.browser.msie) {
 						$('html').bind('dragstart', ignoreNativeDrag).bind('selectstart', ignoreNativeDrag);
-					}*/
+					}
 					return false;
 				};
 				var onStopDrag = function()
 				{
 					$('html').unbind('mouseup', onStopDrag).unbind('mousemove', updateScroll);
 					dragMiddle = percentInView*paneHeight/2;
-					/*if ($.browser.msie) {
+					if ($.browser.msie) {
 						$('html').unbind('dragstart', ignoreNativeDrag).unbind('selectstart', ignoreNativeDrag);
-					}*/
+					}
 				};
 				var positionDrag = function(destY)
 				{

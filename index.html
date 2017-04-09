@@ -1,37 +1,112 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
-<meta>
+<head>
     <meta charset="UTF-8">
-    <title>Homework_09-10</title>
-    <meta></meta>
-    <link rel="stylesheet" type="text/css" href="css/main.css">
-    <link rel="stylesheet" type="text/css" href="css/jcarousel_basic.css">
-    <script type="text/javascript" src="js/jquery-3.2.0.min.js"></script>
-    <script type="text/javascript" src="js/jquery.jcarousel.js"></script>
-    <script type="text/javascript" src="js/jquery.jcarousel.basic.js"></script>
+    <title>homework_9-10_checkbox</title>
+
+    <link rel="stylesheet" type="text/css" href="css/jcider.css"/>
+    <link rel="stylesheet" type="text/css" href="css/cusel.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css"/>
+
+    <script type="text/javascript" src="js/jquery-1.8.3.js"></script>
+    <script type="text/javascript" src="js/jquery.checkbox.js"></script>
+   <script type="text/javascript" src="js/jScrollPane.js"></script>
+    <script type="text/javascript" src="js/jquery.mousewheel.js"></script>
+    <script type="text/javascript" src="js/cusel.js"></script>
+    <script type="text/javascript" src="js/jcider.js"></script>
+    <script type="text/javascript" src="js/jquery.dropdownmenu.js"></script> 
+    <script type="text/javascript" src="js/9-10.js"></script>
+
 </head>
 <body>
-    <div class="wrapper">
-        <div class="jcarousel" data-jcarousel="true"></div>
-        <p class="photo-credits"></p>
-        <div class="jcarousel-wrapper">
+    <p>[LOGO]</p>
+    <nav>
+        <ul>
+            <li><a href="#">Головна</a></li>
+            <li><a href="#">Не головна</a></li>
+            <li class="dropdown">
+                <a href="#">Каталог</a>
+                <ul class="sub-menu">
+                    <li><a href="#">Категорія 1</a></li>
+                    <li class="dropdown">
+                        <a href="#">Категорія 2</a>
+                        <ul class="sub-menu">
+                            <li><a href="#">Товар 1</a></li>
+                            <li><a href="#">Товар 2</a></li>
+                            <li><a href="#">Товар 3</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#">Категорія 3</a>
+                        <ul class="sub-menu">
+                            <li><a href="#">Товар 4</a></li>
+                            <li><a href="#">Товар 5</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+    
+    <div class="slider-wrapper">
+        <div class="slider">
             <ul>
-               <li><img src="img/images1.jpeg"></li>
-               <li><img src="img/images2.jpeg"></li>
-               <li><img src="img/images3.jpeg"></li>
-               <li><img src="img/images4.jpeg"></li>
-               <li><img src="img/images5.jpeg"></li>
-               <li><img src="img/images6.jpeg"></li>
-             </ul>
-        </div>
-        <a class="jcarousel-prev" href="#">Prev</a>
-        <a class="jcarousel-next" href="#">Next</a>
-        <!-- Pagination -->
-        <div class="jcarousel-pagination">
-            <!-- Pagination items will be generated in here -->
+                <li><img src="img/t1.jpg" alt="images1.jpg"></li>
+                <li><img src="img/t2.jpg" alt="images2.jpg"></li>
+                <li><img src="img/t3.jpg" alt="images3.jpg"></li>
+                <li><img src="img/t4.jpg" alt="images4.jpg"></li>
+            </ul>
         </div>
     </div>
-<script type="text/javascript" src="js/9-10.js"></script>
-</body>
+    <hr>
+    
+    <div class="select-wrapper">
+      <select id="idSelect" name="nameSelect">
+        <option selected="selected" value="значение option 1">Please, select the value ... </option>
+        <option value="значение option 2">текст option 1</option>
+        <option value="значение option 3">текст option 2</option>
+        <option value="значение option 4">текст option 3</option>
+        <option value="значение option 5">текст option 4</option>
+        <option value="значение option 6">текст option 5</option>
+        <option value="значение option 7">текст option 6</option>
+      </select>
+    </div>
 
+    <p>Checkbox with JS</p>
+    <label for="jschb1">JS Checkbox 1</label>
+    <span class="niceCheck">
+        <input type="checkbox" name="jsch1" id="jschb1" tabindex="1" autofocus="true">
+    </span>
+    <br>
+    <label for="jschb2">JS Checkbox 2</label>
+    <span class="niceCheck">
+        <input type="checkbox" name="jsch2" id="jschb2" tabindex="2">
+    </span>
+    <br>
+    <label for="jschb3">JS Checkbox 3</label>
+    <span class="niceCheck">
+        <input type="checkbox" name="jsch3" id="jschb3" tabindex="3">
+    </span>
+    <br>
+    <label for="jschb4">JS Checkbox 4</label>
+    <span class="niceCheck">
+        <input type="checkbox" name="jsch4" id="jschb4" tabindex="4">
+    </span>
+    
+    <p>Checkbox with CSS</p>
+    <div class="csscheckbox">
+        <input type="checkbox" name="cssch1" id="csschb1">
+        <label for="csschb1">CSS Checkbox 1</label>
+        <br>
+        <input type="checkbox" name="cssch2" id="csschb2">
+        <label for="csschb2">CSS Checkbox 2</label>
+        <br>
+        <input type="checkbox" name="cssch3" id="csschb3">
+        <label for="csschb3">CSS Checkbox 3</label>
+        <br>
+        <input type="checkbox" name="cssch4" id="csschb4">
+        <label for="csschb4">CSS Checkbox 4</label>
+    </div>
+
+</body>
 </html>

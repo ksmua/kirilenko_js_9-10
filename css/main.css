@@ -1,69 +1,33 @@
-
+body{
+    background: #ccc;
+}
 
 /* --- SELECT --- */
 .select-wrapper{
-  text-align: center;
-}
-/*.custom-select, .custom-select-label{
-  height: 2em;
-  line-height: 2em;
-  position: relative;
-  width: 15%;
-  display: block;
+    text-align: center;
 }
 
-.custom-select{
-  margin-bottom: -2em;
-  z-index: 2;
-  opacity: 0;
-  -webkit-appearance: none;
-}
-
-.custom-select-label{
-  padding-left: 0.5em;
-  background: #ddd;
-  margin: 0;
-  -webkit-box-shadow: 0px 1px 5px rgba(0,0,0,0.4);
-  box-shadow: 0px 1px 5px rgba(0,0,0,0.4);
-}
-
-.custom-select-label:after{
-  content: "";
-  display: block;
-  border: 6px solid transparent;
-  border-top-color: #222;
-  position: absolute;
-  top: 50%;
-  right: 0.5em;
-  margin-top: -3px;
-}
-option{
-  color: red;
-  padding: 4px;
-  line-height: 2em;
-}*/
 /* --- CHECKBOX --- */
-/* --> Jquery */
+/* --> jQuery */
 .niceCheck {
-  width: 17px;
-  height: 17px;
-  display: inline-block;
-  cursor: pointer;
-  margin-left: 10px;
-  position: relative;
-  top: 2px;
-  background: url(../img/checkbox-sprite.png);
+    width: 17px;
+    height: 17px;
+    display: inline-block;
+    cursor: pointer;
+    margin-left: 10px;
+    position: relative;
+    top: 2px;
+    background: url(../img/checkbox-sprite.png);
 }
 
 .niceCheck input {
-  margin-left: -999999px;
-  /*display: none;*/
+    margin-left: -999999px;
 }
 
 /* --> CSS */
 .csscheckbox input[type=checkbox] {
-     position: absolute;
-     clip: rect(0, 0, 0, 0);
+    position: absolute;
+    clip: rect(0, 0, 0, 0);
 }
 .csscheckbox label {
     cursor: pointer;
@@ -88,16 +52,18 @@ input[type=checkbox]:checked + label:after {
     background-position: 0 -51px;
 }
 
-/* MENU */
+/* --- MENU --- */
 nav {
     background-color: rgb(95,76,76);
     /*padding: 10px 0;*/
 }
+
 nav ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
 }
+
 nav ul li {
     display: inline-block;
     position: relative;
@@ -110,11 +76,13 @@ nav li ul {
     top: 40px; /* make this equal to the line-height of the links (specified below) */
     width: 200px;
 }
+
 nav li li {
     position: relative;
     margin: 0;
     display: block;
 }
+
 nav li li ul {
     position: absolute;
     top: 0;
@@ -127,21 +95,21 @@ nav a {
     padding: 0 12px;
     margin: 0 12px;
 }
+
 nav a {
     color: #fff;
     text-decoration: none;
     display: block;
 }
-/**/
+
 @keyframes color {
-from {color: rgb(230, 255, 230);}
-to {color: rgb(50, 240, 50);}
+    from {color: rgb(230, 255, 230);}
+    to {color: rgb(50, 240, 50);}
 }
-/**/
+
 nav a:hover,
 nav a:focus,
 nav a:active {
-    /*animation-fill-mode: forwards;*/
     animation: color 1s 1 ease-in-out;
     color: rgb(50,240,50);
 }
@@ -152,6 +120,7 @@ nav li li a {
     margin: 0 10px;
     padding: 0;
 }
+
 /*nav li li:last-child a {
     border-bottom: none;
 }*/
